@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Films</title>
+</head>
+<body>
+    <center>
+        <h3 style="color:green">Listing of Films</h3>
+        <p>Enter the movie name and click the button to add it to the list</p>
+        <br>
+        <b>Enter movie name:</b>
+        <input type="text" id="mv">
+        <button type="button" onclick="addObj()">Add Element</button>
+        <h4 id="result"></h4>
+    </center>
+    <script>
+        var seriesList = ["Rush Hour", "Mission Impossible", "X-Men"];
+        document.write("<b>Initially elements in array:</b><br>" + seriesList + "<br>");
+
+        function addObj() {
+            var movie = document.getElementById("mv").value;
+            seriesList.push(movie);
+            document.getElementById("result").innerHTML = "<b>Array after adding new elements:</b><br>" + seriesList;
+        }
+    </script>
+</body>
+</html>
