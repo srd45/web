@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5pt; /* Initial font size */
+    }
+</style>
+</head>
+<body bgcolor="lightblue">
+    <p id="myP1">SVCE</p>
+</body>
+<script>
+    var textsize = 5;
+    var myWait = setInterval(GrowText, 100);
+
+    function GrowText() {
+        if (textsize < 150) {
+            textsize += 1;
+            document.getElementById("myP1").innerHTML = "SVCE";
+            document.getElementById("myP1").style.fontSize = textsize + 'pt'; // Corrected font-size property
+            document.getElementById("myP1").style.color = "red";
+        } else {
+            clearInterval(myWait);
+            myWait = setInterval(ShrinkText, 100);
+        }
+    }
+
+    function ShrinkText() {
+        if (textsize > 5) {
+            textsize -= 1;
+            document.getElementById("myP1").innerHTML = "SVCE";
+            document.getElementById("myP1").style.fontSize = textsize + 'pt'; // Corrected font-size property
+            document.getElementById("myP1").style.color = "blue";
+        } else {
+            clearInterval(myWait);
+        }
+    }
+</script>
+</html>
