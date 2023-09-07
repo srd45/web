@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Using the onclick event attribute</title>
+</head>
+
+<body>
+    <h3>Using the <i>onclick event attribute</i> to invoke the particular function whenever the user checks and unchecks
+        checkboxes</h3>
+
+    <label for="fruit">Fruits</label>
+    <input type="checkbox" id="fruit" onclick="showFruits()">
+    <label for="vegetables">Vegetables</label>
+    <input type="checkbox" id="vegetables" onclick="showVegetables()"><br><br>
+
+    <div id="vegetables-div" style="display: none;">
+        <ul>
+            <li>Cabbage</li>
+            <li>Celery</li>
+            <li>Carrot</li>
+            <li>Onion</li>
+            <li>Tomato</li>
+            <li>Potato</li>
+        </ul>
+    </div>
+
+    <div id="fruits-div" style="display: none;">
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Guava</li>
+            <li>Grapes</li>
+            <li>Watermelon</li>
+            <li>Strawberry</li>
+        </ul>
+    </div>
+
+    <script>
+        function showFruits() {
+            let fruit = document.getElementById('fruit');
+            let fruits_div = document.getElementById('fruits-div');
+
+            if (fruit.checked) {
+                fruits_div.style.display = "block";
+            } else {
+                fruits_div.style.display = "none";
+            }
+        }
+
+        function showVegetables() {
+            let vegetables = document.getElementById('vegetables');
+            let vegetables_div = document.getElementById('vegetables-div');
+
+            if (vegetables.checked) {
+                vegetables_div.style.display = "block";
+            } else {
+                vegetables_div.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
