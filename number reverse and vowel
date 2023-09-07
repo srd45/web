@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+    var str = prompt("Enter the Input", ""); // Fixed the prompt string
+
+    if (!isNaN(str)) {
+        var num, rev = 0, remainder;
+
+        num = parseInt(str);
+
+        while (num !== 0) {
+            remainder = num % 10;
+            num = parseInt(num / 10);
+            rev = rev * 10 + remainder;
+        }
+
+        alert("The reversed number is " + rev);
+    } else {
+        str = str.toUpperCase();
+        var vowelFound = false;
+
+        for (var i = 0; i < str.length; i++) {
+            var chr = str.charAt(i);
+            
+            if (chr === 'A' || chr === 'E' || chr === 'I' || chr === 'O' || chr === 'U') {
+                alert("The position of the leftmost vowel is " + (i + 1));
+                vowelFound = true;
+                break; // Exit the loop when the first vowel is found
+            }
+        }
+
+        if (!vowelFound) {
+            alert("No vowel is found in the entire string.");
+        }
+    }
+</script>
+</body>
+</html>
