@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TIME TABLE</title>
+</head>
+<body>
+<h2>TIME TABLE</h2>
+<table border="5" cellspacing="0" align="center">
+<tr align="center" width="100" height="50">
+<td align="center" width="100" height="50">
+<br><b>DAY/PERIOD</b></td>
+<td align="center" width="100" height="50">I
+<br><b>9:30-10:20</b></td>
+<td align="center" width="100" height="50">II
+<br><b>10:20-11:10</b></td>
+<td align="center" width="100" height="50">III
+<br><b>11:10-12:00</b></td>
+<td align="center" width="100" height="50">
+<br><b>12:00-12:40</b></td>
+<td align="center" width="100" height="50">IV
+<br><b>12:40-1:30</b></td>
+<td align="center" width="100" height="50">V
+<br><b>1:30-2:20</b></td>
+<td align="center" width="100" height="50">VI
+<br><b>2:20-3:10</b></td>
+<td align="center" width="100" height="50">VII
+<br><b>3:10-4:00</b></td>
+</tr>
+
+<tr>
+<td align="center" height="50"><b>MONDAY</b></td>
+<td align="center" height="50">MAT</td>
+<td align="center" height="50">DAA</td>
+<td align="center" height="50">MES</td>
+<td align="center" height="50" rowspan="5"><b><h2>L<br>U<br>N<br>C<br>H</b></td>
+<td align="center" height="50" colspan="3">WEB LAB</td>
+<td align="center" height="50">OS</td>
+</tr>
+
+<tr>
+<td align="center" height="50"><b>TUESDAY</b></td>
+<td align="center" height="50" colspan="3">PYT LAB</td>
+<td align="center" height="50">BE</td>
+<td align="center" height="50">OS</td>
+<td align="center" height="50">DAA</td>
+<td align="center" height="50">PLACEMENT</td>
+</tr>
+
+<tr>
+<td align="center" height="50"><b>WEDNESDAY</b></td>
+<td align="center" height="50">MAT</td>
+<td align="center" height="50">DAA</td>
+<td align="center" height="50">MES</td>
+<td align="center" height="50">OS</td>
+<td align="center" height="50" colspan="3">KANNADA</td>
+</tr>
+
+<tr>
+<td align="center" height="50"><b>THURSDAY</b></td>
+<td align="center" height="50">BE</td>
+<td align="center" height="50">OS</td>
+<td align="center" height="50">DAA</td>
+<td align="center" height="50" colspan="3">DAA LAB</td>
+<td align="center" height="50">MAT</td>
+</tr>
+
+<tr>
+<td align="center" height="50"><b>FRIDAY</td>
+<td align="center" height="50" colspan="3">MES LAB</td>
+<td align="center" height="50">OS</td>
+<td align="center" height="50">MAT</td>
+<td align="center" height="50">MES</td>
+<td align="center" height="50">BE</td>
+</tr>
+
+<tr>
+<td align="center" height="50"><b>SATURDAY</td>
+<td align="center" height="50" colspan="8">VIDEO ASSINGMENT</td>
+</tr>
+</table>
+</body>
+</html>
+
+
+
